@@ -19,7 +19,7 @@
     </div>
 
 </div>
-<table class="table table-dark">
+<table class="table table-bordered">
   <thead>
     <tr>
       <th scope="col">id</th>
