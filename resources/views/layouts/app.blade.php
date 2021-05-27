@@ -35,10 +35,10 @@
                     <ul class="navbar-nav mr-auto">
                     @auth
                     <li class="nav-item">
-                    <a href="{{ route('firms.index') }}" class="nav-link">firms</a>
+                    <a href="{{ route('firms.index') }}" class="nav-link">Firms</a>
                     </li>
                     <li class="nav-item">
-                    <a href="{{ route('workers.index') }}" class="nav-link">workers</a>
+                    <a href="{{ route('workers.index') }}" class="nav-link">Workers</a>
                     </li>
 
                     @endauth

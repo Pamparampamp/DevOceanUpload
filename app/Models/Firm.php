@@ -12,6 +12,6 @@ class Firm extends Model
         'name', 'email', 'image','website',
     ];
     public function Workers(){
-return $this->hasMany('App\Models\Worker');
+    return $this->hasMany('App\Models\Worker');
 }
 }

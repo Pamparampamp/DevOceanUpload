@@ -19,15 +19,28 @@
     </div>
 
 </div>
+
+ @if ($message = Session::get('success'))
+
+        <div class="alert alert-success">
+
+            <p>{{ $message }}</p>
+
+        </div>
+
+    @endif
+
+
+
 <table class="table table-bordered">
   <thead>
     <tr>
-      <th scope="col">id</th>
+      <th scope="col">ID</th>
       <th scope="col">Firstname</th>
       <th scope="col">Lastname</th>
-      <th scope="col">email</th>
-      <th scope="col">phone</th>
-      <th scope="col">firm_id</th>
+      <th scope="col">Email</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Firm_id</th>
        <th scope="col">Actions</th>
     </tr>
   </thead>
