@@ -8,6 +8,30 @@
 <br>
 <br>
 
+
+ @if ($errors->any())
+
+        <div class="alert alert-danger">
+
+            <strong>Whoops!</strong> There were some problems.<br><br>
+
+            <ul>
+
+                @foreach ($errors->all() as $error)
+
+                    <li>{{ $error }}</li>
+
+                @endforeach
+
+            </ul>
+
+        </div>
+
+    @endif
+
+
+
+
 <form method="POST" action="{{ route('workers.update', $worker->id)}}">
     @csrf
 
@@ -15,12 +39,12 @@
 @method('PUT')
   <div class="mb-3">
     <label  class="form-label">First name</label>
-    <input  value="{{$worker->firstname}}" type="text" name="firstname" class="form-control" >
+    <input  value="{{$worker->Firstname}}" type="text" name="firstname" class="form-control" >
 
   </div>
   <div class="mb-3">
     <label for="text" class="form-label">Last name</label>
-    <input value="{{$worker->lastname}}"type="text" name="lastname" class="form-control" >
+    <input value="{{$worker->Lastname}}"type="text" name="lastname" class="form-control" >
   </div>
    <div class="mb-3">
     <label  class="form-label">email</label>
